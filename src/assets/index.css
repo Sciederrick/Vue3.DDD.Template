@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .limit-width {
+    @apply px-2 lg:px-4 2xl:container 2xl:mx-auto;
+  }
+  .link {
+    @apply font-semibold underline focus:text-green-500;
+  }
+  .card {
+    @apply flex flex-col justify-center items-center max-w-xl mx-auto;
+  }
+  .card-body {
+    @apply bg-gray-50 rounded p-8;
+  }
+  .heading-1 {
+    @apply font-bold text-5xl py-16;
+  }
+  .heading-2 {
+    @apply font-bold text-4xl py-16;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500;
+  }
+}
